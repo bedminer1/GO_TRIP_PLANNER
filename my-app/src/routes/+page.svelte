@@ -4,9 +4,6 @@
 </script>
 
 <div class="flex flex-col justify-center items-center h-screen">
-	<div class="flex flex-col justify-center items-center w-1/3">
-		<input type="number" class="input text-center w-24 mb-8" bind:value={count}>
-		<p>DOUBLED: {double}</p>
-	</div>
-	
+	<a href="/bucket">bucket</a>
+	<a href="/itinerary">itinerary</a>
 </div>

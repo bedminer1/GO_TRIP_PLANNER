@@ -29,6 +29,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@floating-ui/dom": "1.6.12"
+    "@floating-ui/dom": "1.6.12",
+    "pocketbase": "^0.21.5"
   }
 }

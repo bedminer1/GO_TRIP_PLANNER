@@ -7,3 +7,22 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+interface Activity {
+	Activity: string
+	Location: string
+	Category: string
+	LowEstimatedCost: number
+	MediumEstimatedCost: number
+	HighEstimatedCost: number
+	Notes: string
+}
+
+interface Item {
+	Activity: string
+	StartTime: Date
+	EndTime: Date
+	LowEstimatedCost: number
+	MediumEstimatedCost: number
+	HighEstimatedCost: number
+}
