@@ -20,6 +20,7 @@ export const load = async () => {
     await pb.admins.authWithPassword(SECRET_EMAIL, SECRET_PASSWORD)
     const form = await superValidate(zod(schema))
 
+    // TODO: custom filtering (switch to category, time of creation)
     const records: Activity[] = await pb.collection("TRAVEL_ACTIVITIES").getFullList({
         sort: '-Location',
     })
@@ -34,7 +35,7 @@ export const actions = {
     saveRecord: async ({ request }) => {
         try {
             const form = await superValidate(request, zod(schema))
-            // custom error checks
+            // TODO: custom error checks
 
             let newRecord: Activity = {
                 Activity: form.data.Activity,
